@@ -7,16 +7,15 @@
         list: return answer
 */
 void main() {
-  List m = [
-    func([1, 2])
-  ];
-  print(m);
+  print(func([1, 2, 3]));
 }
 
-int func(List list_num) {
-  int i = list_num.length - 1;
+List func(List list_num) {
+  List m = [];
   if (list_num.first > list_num.last) {
-    return list_num.last;
+    m = list_num.last;
+    return m;
   }
-  return list_num[list_num.length - 1];
+  m = list_num[list_num.length - 1];
+  return m;
 }
