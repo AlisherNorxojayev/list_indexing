@@ -6,4 +6,20 @@
     Returns:
         list: return answer
 */
-void main() {}
+void main() {
+  print(func([1, 0, 1, 1, 0]));
+}
+
+List func(List list1) {
+  int i = 0;
+  while (i < list1.length) {
+    if (list1[i] == 1) {
+      list1[i] = "True";
+      i += 1;
+    } else if (list1[i] == 0) {
+      list1[i] = "False";
+      i += 1;
+    }
+  }
+  return list1;
+}

@@ -7,4 +7,12 @@
     Returns:
         list: return answer
 */
-void main() {}
+
+void main() {
+  print(func([1, 2, 3, 4], [5, 6, 7, 8]));
+}
+
+List<int> func(List<int> list1, List<int> list2) {
+  list1.addAll(list2);
+  return list1;
+}

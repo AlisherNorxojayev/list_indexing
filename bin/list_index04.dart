@@ -6,4 +6,11 @@
     Returns:
         list: return answer
 */
-void main() {}
+void main() {
+  print(func([1, 2, 3, 4, 5]));
+}
+
+int func(List<int> list1) {
+  int i = list1.length;
+  return list1[i - 1];
+}
