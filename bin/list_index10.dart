@@ -13,9 +13,9 @@ void main() {
 List func(List list_num) {
   List m = [];
   if (list_num.first > list_num.last) {
-    m.add(list_num.last);
+    m.add(list_num.first);
     return m;
   }
-  m.add(list_num[list_num.length - 1]);
+  m.add(list_num.last);
   return m;
 }
