@@ -10,7 +10,8 @@ void main() {
   print(func([1, 2, 3, 4, 5]));
 }
 
-int func(List<int> list1) {
-  int i = list1.length;
-  return list1[i - 1];
+List func(List list1) {
+  List m = [];
+  m.add(list1.last);
+  return m;
 }

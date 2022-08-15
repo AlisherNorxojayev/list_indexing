@@ -7,9 +7,9 @@
         list: return answer
 */
 void main() {
-  print(func([]));
+  print(func());
 }
 
-List func(List<int> list) {
-  return list;
+List func() {
+  return [];
 }
